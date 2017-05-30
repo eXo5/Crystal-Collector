@@ -10,7 +10,10 @@ $(document).ready(function(){
 	$("#clientN").text(" " + clientN);
 	var startNumber = 0;
 	var endGame = false
-
+	var coin = new Audio("http://themushroomkingdom.net/sounds/wav/smw/smw_coin.wav");
+		function coins() {coin.play();}
+	var yoshi = new Audio("http://themushroomkingdom.net/sounds/wav/sm64/sm64_yoshi.wav");
+		function yoshis() {yoshi.play();}
 	//declared functions
 
 	function checkEnd() {
@@ -19,6 +22,7 @@ $(document).ready(function(){
 			clientN = 0;
 			++score;
 			$("#score").text(" " + score);
+			coins();
 			alert("Congratulations!");
 			whileGems();
 			}
@@ -27,6 +31,7 @@ $(document).ready(function(){
 			clientN = 0;
 			++losses;
 			$("#losses").text(" " + losses);
+			yoshis();
 			alert("You can do better than that!");
 			whileGems();
 		}	
