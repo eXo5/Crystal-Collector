@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<title>Crystal Collector</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+	<body>
+		<h1>Crystal Collector</h1>
+			
+		<div id="numToGet">
+			<h2>Magic Number:<span id="startN"></span></h2>
+		</div>
+		<div id="clientNum">
+			<h3>Your Number:<span id="clientN"></span></h3>
+		</div>
+	<div class="container-fluid"> <!-- Div to center Crystals -->
+				<div id="crystals">
+					<img id="diamond" src="assets/images/minecraft-diamond.png" alt="diamond">
+					<img id="ruby" src="assets/images/ruby.png" alt="ruby">
+					<img id="emerald" src="assets/images/emerald-1.png" alt="emerald">
+					<img id="amethyst" src="assets/images/amethyst.png" alt="amethyst">
+				</div>
+	</div>
+	<section class="container-fluid" id="instruction">
+		<p id="instructions">Welcome to Crystal Collector. You will be the one collecting the Crystals! The object is simple: Collect the right amount of crystals in an appropriate order to match your number to the Magic Number! Every time you match the right number of crystals the Magic Number resets and so will the worth of each crystal! Don't go over the Magic Number! That's not necessarily advisable. Nothing good will come of that...<br>
+		Good luck!!</p>
+	</section></div>
+	<p id="wins">You won:<span id="score"></span> times</p>
+	<p id="loss">You have exceeded your value:<span id="losses"></span> times</p>
+
+	<audio>
+		<source id="lose" src="assets/smb_bowserfalls.wav" type="audio/wav" preload="auto">
+		<source id="win" src="assets/smb_coin.wav" type="audio/wav" preload="auto">
+	</audio>
+
+	<script src="assets/javascript/game.js"></script>
+
+	</body>
+</html>
